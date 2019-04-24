@@ -48,6 +48,7 @@ nav:
 # If you use disqus then you should set disqus_shortname in your site config and disable duoshuo here.
 # You also need to set 'comments' to true in the front-matter
 #duoshuo: sprabbit
+disqus_shortname: akiicat
 
 # jiathis share id
 # refer to http://jiathis.com
