@@ -10,12 +10,12 @@
   >
   <%- partial('_partials/mobile-header', {}, {cache: true}) %>
   <div class="main-container">
-    <ins class="adsbygoogle"
-      style="display:inline-block;width:728px;height:90px"
-      data-ad-client="ca-pub-2592278084631591"
-      data-ad-slot="8047795849"></ins>
     <%- partial('_partials/sidebar', {}, {cache: true}) %>
     <div class="main-content">
+      <ins class="adsbygoogle"
+        style="display:inline-block;width:728px;height:90px"
+        data-ad-client="ca-pub-2592278084631591"
+        data-ad-slot="8047795849"></ins>
       <% if (theme.maxContentWidth) { %>
         <div style="max-width: <%= theme.maxContentWidth %>">
       <% } %>
