@@ -2,8 +2,12 @@
 
 function set_image_size(image, width, height) 
 {
-    image.setAttribute("width", width + "px");
-    image.setAttribute("height", height + "px");
+    if (width > 0) {
+        image.setAttribute("width", width + "px");
+    }
+    if (height > 0) {
+        image.setAttribute("height", height + "px");
+    }
 }
 
 function hexo_resize_image()
@@ -24,19 +28,19 @@ function hexo_resize_image()
                 var width = values[0];
                 var height = values[1];
 
-                if (!(width.length && height.length))
-                {
-                    var n_width = img.naturalWidth;
-                    var n_height = img.naturalHeight;
-                    if (width.length > 0)
-                    {
-                        height = n_height*width/n_width;
-                    }
-                    if (height.length > 0)
-                    {
-                        width = n_width*height/n_height;
-                    }
-                }
+                // if (!(width.length && height.length))
+                // {
+                //     var n_width = img.naturalWidth;
+                //     var n_height = img.naturalHeight;
+                //     if (width.length > 0)
+                //     {
+                //         height = n_height*width/n_width;
+                //     }
+                //     if (height.length > 0)
+                //     {
+                //         width = n_width*height/n_height;
+                //     }
+                // }
                 set_image_size(img, width, height);
             }
             continue;
